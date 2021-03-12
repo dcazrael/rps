@@ -1,4 +1,4 @@
-import { ThemeProvider } from '../context/ThemeContext';
+import { ThemeProvider } from 'tailwind-darkmode-toggle';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {

@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import DarkModeToggle from '../components/DarkModeToggle';
+import { DarkModeToggle } from 'tailwind-darkmode-toggle';
 
 export default function Home() {
   return (
