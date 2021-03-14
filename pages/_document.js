@@ -12,11 +12,14 @@ class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <link rel='preconnect' href='https://fonts.gstatic.com' />
-
+          <link
+            href='https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&display=swap'
+            rel='stylesheet'
+          />
           <meta charSet='UTF-8' />
           <ThemeScriptTag />
         </Head>
-        <body className='bg-gray-300 dark:bg-gray-800'>
+        <body className='w-screen h-screen bg-gradient-radial-center dark:from-neutral-grad-from dark:to-neutral-grad-to from-gray-400 to-gray-200'>
           <Main />
           <NextScript />
         </body>

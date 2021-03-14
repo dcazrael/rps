@@ -1,10 +1,13 @@
 import { ThemeProvider } from 'tailwind-darkmode-toggle';
+import { ScoreProvider } from '../context/ScoreContext';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider>
-      <Component {...pageProps} />
+      <ScoreProvider>
+        <Component {...pageProps} />
+      </ScoreProvider>
     </ThemeProvider>
   );
 }
