@@ -11,7 +11,7 @@
     "next": "10.0.8",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "tailwind-darkmode-toggle": "^1.0.3"
+    "tailwind-darkmode-toggle": "^1.0.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
