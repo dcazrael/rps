@@ -19,9 +19,10 @@ class MyDocument extends Document {
           <meta charSet='UTF-8' />
           <ThemeScriptTag />
         </Head>
-        <body className='w-screen h-screen bg-gradient-radial-center dark:from-neutral-grad-from dark:to-neutral-grad-to from-gray-400 to-gray-200'>
+        <body className='w-screen h-full min-h-screen bg-gradient-radial-center dark:from-neutral-grad-from dark:to-neutral-grad-to from-gray-400 to-gray-200'>
           <Main />
           <NextScript />
+          <div id='modal-root'></div>
         </body>
       </Html>
     );

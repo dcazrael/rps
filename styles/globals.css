@@ -2,23 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-.middle.closed {
-  width: 0em;
-  margin: 0 10%;
-  overflow: hidden;
-  animation: resize 0.7s cubic-bezier(0.4, 0, 1, 1) 1 2s forwards;
+.middle {
+  width: 0rem;
+  opacity: 0;
 }
-.middle.opened {
-  width: 33%;
-  margin: 0 33%;
-  animation: resize 0.5s cubic-bezier(0.4, 0, 1, 1) 1 2s forwards reverse;
+
+.expanded {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 300ms linear 300ms;
 }
-@keyframes resize {
-  0% {
-    width: 0em;
+
+.won {
+  position: relative;
+}
+
+.won::before {
+  content: '';
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  width: 130%;
+  height: 132%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1rem rgb(255 255 255 / 3%), 0 0 0 2rem rgb(255 255 255 / 3%),
+    0 0 0 3rem rgb(255 255 255 / 3%);
+}
+
+@media (min-width: 768px) {
+  .expanded {
+    width: 13rem;
+    opacity: 1;
+    transition: width 150ms linear 750ms, opacity 150ms linear 1s;
   }
 
-  100% {
-    width: 20em;
+  .won::before {
+    content: '';
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    width: 135%;
+    height: 138%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4rem rgb(255 255 255 / 3%),
+      0 0 0 8rem rgb(255 255 255 / 3%), 0 0 0 12rem rgb(255 255 255 / 3%);
   }
 }
