@@ -6,7 +6,7 @@ module.exports = {
     preserveHtmlElements: false,
     content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
     options: {
-      safelist: ["dark"],
+      safelist: ['dark'],
     },
   },
   darkMode: 'class', // or 'media' or 'class'
